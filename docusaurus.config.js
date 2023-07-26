@@ -4,14 +4,19 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const SITE_CONFIG = {
+  NAME: `sagelga's blog`,
+  DESCRIPTION: `sagelga's Personal blog`,
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: SITE_CONFIG.NAME,
+  tagline: SITE_CONFIG.DESCRIPTION,
+  favicon: 'img/sagelga.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://blog.sagelga.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -28,8 +33,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'th',
-    locales: ['en', 'th'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
   presets: [
@@ -41,10 +46,10 @@ const config = {
         blog: {
           routeBasePath: '/',
           showReadingTime: true,
-          readingTime: ({content, frontMatter, defaultReadingTime}) =>
-            defaultReadingTime({content, options: {wordsPerMinute: 300}}),
-          blogTitle: 'Docusaurus blog!',
-          blogDescription: 'A Docusaurus powered blog!',
+          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
+            defaultReadingTime({ content, options: { wordsPerMinute: 250 } }),
+          blogTitle: SITE_CONFIG.NAME,
+          blogDescription: SITE_CONFIG.DESCRIPTION,
           postsPerPage: 'ALL',
           blogSidebarTitle: 'All posts',
           blogSidebarCount: 'ALL',
@@ -60,15 +65,19 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/sagelga.jpg',
       navbar: {
-        title: "sagelga's blog",
+        title: SITE_CONFIG.NAME,
         logo: {
           alt: 'My Site Logo',
           src: 'img/sagelga.png',
         },
         items: [
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { label: 'Home', to: '/', position: 'left' },
+          { label: 'ByteSide.one blog', to: '/tags/bytesideone', position: 'left' },
+          { label: 'Generative AI', to: '/tags/generative-ai', position: 'left' },
+          { label: 'Travel', to: '/tags/travel', position: 'left' },
+          { label: 'Programming', to: '/tags/programming', position: 'left' },
           {
             href: 'https://github.com/sagelga/blog',
             label: 'GitHub',
@@ -110,7 +119,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} by <a href="https://sagelga.com">sagelga</a>. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

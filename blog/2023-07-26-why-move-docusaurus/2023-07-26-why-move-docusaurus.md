@@ -4,6 +4,7 @@ title: I host my own blog website, and here's how I did it
 description: Host your own React-based blog and customize everything with $0
 authors: [sagelga]
 tags: [SEO, Docusaurus, Programming]
+image: https://images.unsplash.com/photo-1620641788421-7a1c342ea42e
 ---
 
 Hate it or not, WordPress, Medium and Hashnode is made for blogging, but it's boring, so I decided to move all my blog posts to Docusaurus. And here's how you can do it with little JavaScript knowledge!

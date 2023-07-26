@@ -35,6 +35,11 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+      },
+    },
   },
 
   presets: [
@@ -74,9 +79,9 @@ const config = {
         },
         items: [
           { label: 'Home', to: '/', position: 'left' },
-          { label: 'ByteSide.one blog', to: '/tags/bytesideone', position: 'left' },
+          { label: 'ByteSide.one', to: '/tags/byte-side-one', position: 'left' },
           { label: 'Generative AI', to: '/tags/generative-ai', position: 'left' },
-          { label: 'Travel', to: '/tags/travel', position: 'left' },
+          // { label: 'Travel', to: '/tags/travel', posistion: 'left' },
           { label: 'Programming', to: '/tags/programming', position: 'left' },
           {
             href: 'https://github.com/sagelga/blog',
@@ -110,7 +115,7 @@ const config = {
             items: [
               {
                 label: 'Blog',
-                to: '/blog',
+                to: '/',
               },
               {
                 label: 'GitHub',

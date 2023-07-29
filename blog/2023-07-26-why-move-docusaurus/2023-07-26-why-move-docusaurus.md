@@ -1,121 +1,59 @@
 ---
 slug: why-move-docusaurus
-title: I host my own blog website, and here's how I did it
-description: Host your own React-based blog and customize everything with $0
+title: I host this website for $0, and here's how I did it
+description: Host your React-based blog and customize everything with $0
 authors: [sagelga]
 tags: [SEO, Docusaurus, Programming]
 image: https://images.unsplash.com/photo-1620641788421-7a1c342ea42e
 ---
 
-When you are talking about creating a hobby of blogging, the benefits of sharing your thoughts, and your new ideas, your passion is there, and it serves everyone. Even though it is not your main objective, the benefits of public exposure are there for you to grab.
-But for some people who are getting started as a hobby, paying a whopping $10 a month for your own WordPress website is not going to be easy on you.
+When you are talking about creating a hobby of blogging, the benefits of sharing your thoughts, and your new ideas, your passion is there, and it serves everyone. Even though it is not your main objective, the benefits of public exposure are there for you to grab. You will be known as a people who do blogging and you can brag that to all your friends that you get exposed by famous companies.
+
+And that is me. I want to express my knowledge and trying to practice my writing, programming, and learning skills to the test with all of these blogging. But how can I do that?
 
 <!--truncate-->
 
-How about we think about self-hosting, isn't it cheaper? Yes. But when it breaks, will you be able to fix it? I think you might not even think about self-hosting from the start. Maybe the word 'hosting' is already confusing to you.
+## Commitment to the habit
 
-But what if I tell you that you can get:
+In my experience, you have to commit to the habit of blogging. If you are a blogger, you have to understand that people want promises and constant value from your content. But you are a new blogger. Understanding how to achieve these lofty goals is still early.
 
--   Free hosting on the website
--   Lightning-speed page loading time
--   Unlimited storage
--   Unlimited bandwidth
--   Full customizability
--   and you can show off you know computing languages like ReactJS, JavaScript, CSS, and HTML
+If you want to start these habits, you can start by using popular blogging sites like [Medium](https://medium.com), [Hashnode](https://hashnode.com) and self-hosting [WordPress](https://wordpress.org). Even though you won't have full control over how you want your content to look and feel, it's still something. Still, I have no doubt in my mind that you can do it.
+
+I don't want to scare you off right from the start, but listen to what I have to say. When you get to the point where you feel that blogging is becoming you, you will feel that you want to do more than just create content. You want readers to feel the experiences that have your name on them. Like me, you want to have your own domain (like byteside.one), a lightning-fast content delivery network, and optimise the way people read and explore your other amazing content.
+
+This is me. I am already there. I've tried them all and I'm still not happy with the inability to customise, the constant maintenance issues and the poor reading experience for my readers. I've been blogging for about 3 years now and I've been through most of the nooks and crannies of all these services. Believe me, you want more when you know you can.
+
+## Upgrade to the next level
+
+So during my studies on software development for my career, I have experienced with ReactJS framework; and I have to say that there are big communities in this framework. So do that I felt in love with this framework.
+
+And during that process I learned that they also have something called 'Docusaurus'. and it works by converting your writing in .txt, .md, or .mdx into an HTML file (aka website page) so that everyone can read your content on the internet while you have full control over how your content is styled.
+
+It was at this moment that I struck struct gold with my blogging problem. It gave me:
+
+-   Complete customisation of styling and functionality
+-   Content is static, so no need to host your content on a server
+-   Lightning fast page load times
+-   No paywall for viewers
+-   Integrates with your GitHub repository
+-   Active Docusaurus community
+-   Unlock the power of React within your blog post by your knowledge, not a server limit or website rule
+-   ... and show off your knowledge of computer languages like ReactJS, JavaScript, CSS and HTML
 
 This is how I did it with Docusaurus.
 
-## Why choose?
-
-**Hate it or not, WordPress, Medium, and Hashnode are made for blogging, but it's boring.** You don't own the content you are creating. You don't have control over the website fonts, website navigation bars, and everything you might want to customize. You can't just leave their service because you hate what they do with free users. This for me a deal breaker.
-
-Again. This totally depends on you. If you like to start from the ground up, and don't even know if you are going to continue the journey of blogging or not, what I am about to explain is not for you. But keep an open mind, you might love it!
-
-For me, it's been around 3 years since I started blogging. I couldn't stop finding new ideas and passions, so I am now obsessed with blogging and creating content based on trending topics around the world. That ignites [ByteSide.one](https://byteside.one/th/) website to become a place where you can go to.
-
-But I kept finding solutions to WordPress. It's good, but it's expensive. So I kept trying to find the perfect blogging website for me to write my ideas and it is free.
-
-That's why today, I like to introduce you to Docusaurus.
-
-### Why do you need to write a blog in Docusaurus?
-
-Here are some more reasons why you should pick Docusaurus over other blogging platforms.
-
-1. Ludicrous page loading speed
-2. No paywall for viewers whatsoever
-3. Integrates with your GitHub repository
-4. Active Docusaurus community
-5. Unlock the power of React within your blog post
-
-And if you have non-blog content you like to serve, Docusaurus got your back too.
-
 ### How much is Docusaurus?
 
-None. Nill. Zill. Zero. Docusaurus is an open-sourced software made by Facebook. You only pay for your time.
+None. Nil. Zilch. Zero. Docusaurus is open source, which means you can use its framework for free. Most of what you pay for is the time it takes to create the content and customise your masterpiece to your liking.
 
-\*You can optionally purchase a Custom Domain (like sagelga.com), a page builder (Netlify, GitHub Actions), and a code hosting website (Amazon S3, GitHub, GitHub Pages) to streamline your development in Docusaurus.
+\*You can optionally purchase a custom domain (like [sagelga.com](https://sagelga.com)), a page builder (Netlify, GitHub Actions), and a code hosting site (Amazon S3, GitHub, GitHub Pages) to streamline your development in Docusaurus.
 
-## Create a Docusaurus Repository
+## Create your own Docusaurus website
 
-Now that you're excited about Docusaurus, let's get started on creating your own Docusaurus blog. Follow these steps to set up your Docusaurus repository:
+In my current settings, here's how I get my blog up and running:
 
-1. Install Node.js: Before you begin, make sure you have Node.js installed on your computer. You can download it from the official website and follow the installation instructions.
-
-2. Initialize Your Project: Open your terminal or command prompt and navigate to the folder where you want to create your Docusaurus project. Then run the following commands:
-
-    ```bash
-    npx create-docusaurus@latest init my-docusaurus-blog classic
-    cd my-docusaurus-blog
-    ```
-
-3. Customize Your Blog: Now that you have your Docusaurus project set up, you can customize it according to your preferences. Open the project folder in your favorite code editor and explore the files. The main files you would want to modify are located in the docs and blog directories. The docs directory is where you can organize your documentation, while the blog directory is where you can write your blog posts.
-
-4. Run the Development Server: To see your blog in action during the development process, run the following command:
-
-    ```bash
-    npm run start
-    ```
-
-This will start a local development server, and you can access your Docusaurus blog by visiting `http://localhost:3000` in your web browser.
-
-## Deploy Your Blog to the Internet with Netlify
-
-Once you've finished customizing your Docusaurus blog and are happy with how it looks and functions, it's time to deploy it to the internet. Netlify is a great platform for hosting static websites like Docusaurus blogs. Here's how you can deploy your blog using Netlify:
-
-1. Create a Netlify Account: If you don't have one already, sign up for a free Netlify account at netlify.com.
-
-2. Install Netlify CLI: You'll need the Netlify Command Line Interface (CLI) to deploy your blog. Install it by running the following command:
-
-    ```bash
-    npm install -g netlify-cli
-    ```
-
-3. Build Your Docusaurus Blog: Before deploying, you need to build your Docusaurus project into static files. Run the following command:
-
-    ```bash
-    npm run build
-    ```
-
-4. Deploy to Netlify: Once the build process is complete, navigate to your project folder and deploy it to Netlify using the CLI:
-
-    ```bash
-    netlify deploy
-    ```
-
-Follow the on-screen instructions, and Netlify will provide you with a live URL where your Docusaurus blog is now hosted.
-
-## Become Google-searchable with Google Search Console
-
-Getting your blog indexed by search engines is essential to improve its visibility and attract organic traffic. One way to speed up the SEO process is by using Google Search Console. Here's how you can set it up:
-
-Create a Google Search Console Account: If you don't have one already, sign up for a free Google Search Console account at [search.google.com/search-console](https://search.google.com/search-console).
-
-1. Add Your Blog URL: Once you're logged in, click on "Add a Property" and enter the URL of your Docusaurus blog. Follow the verification steps to confirm ownership.
-
-2. Submit Your Sitemap: Docusaurus automatically generates a sitemap that helps search engines discover and index your content. Locate your sitemap at /static/sitemap.xml in your project folder. Then, submit the sitemap URL through the Google Search Console by navigating to "Sitemaps" in the left sidebar and clicking "Add a new sitemap."
-
-3. Monitor Performance: With your blog added to Google Search Console, you can now monitor how your content is performing in search results. Keep an eye on the "Coverage" and "Performance" sections to identify any issues and track your blog's SEO progress.
-
-![./images/39dc4daccb09a7db017c96fc2887756a.png](./images/39dc4daccb09a7db017c96fc2887756a.png)
-
-Congratulations! You've successfully set up your Docusaurus blog, deployed it to the internet with Netlify, and optimized its SEO using Google Search Console. Now you can focus on creating engaging content, sharing your thoughts and ideas with the world, and enjoying the benefits of having your own customizable and freely hosted blogging platform. Happy blogging!
+-   **GitHub** to store my blog content
+-   **Netlify** to deploy my code from GitHub so it can be viewed
+-   **CloudFlare** to improve content delivery, DNS, and other things needed to get these content to my readers as fast as possible
+-   **Microsoft Clarity** for website analytics
+-   **Google Search Console & Bing Search Console** to get the famous search engine to start crawling and indexing my site

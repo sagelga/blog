@@ -15,6 +15,8 @@
     --ifm-color-primary-light: #33925d;
     --ifm-color-primary-lighter: #359962;
     --ifm-color-primary-lightest: #3cad6e;
+    --ifm-navbar-background-color: #8eac50;
+    --ifm-navbar-link-hover-color: #fff;
     --ifm-code-font-size: 95%;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
     --ifm-font-family-base: 'IBM Plex Sans Thai Looped', system-ui,
@@ -35,4 +37,6 @@
     --ifm-color-primary-lighter: #32d8b4;
     --ifm-color-primary-lightest: #4fddbf;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+    --ifm-navbar-background-color: #17594a;
+    --ifm-navbar-link-hover-color: #d3d04f;
 }

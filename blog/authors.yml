@@ -4,8 +4,8 @@ sagelga:
     url: https://sagelga.com
     image_url: https://github.com/sagelga.png
 
-ChatGPT:
+chatgpt:
     name: ChatGPT
-    title: Generative AI chatbot
+    title: Generative AI chatbot by OpenAI
     url: https://chat.openai.com
-    image_url: https://github.com/chatgpt.png
+    image_url: https://github.com/openai.png

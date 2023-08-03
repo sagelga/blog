@@ -3,3 +3,9 @@ sagelga:
     title: Content Creator at ByteSide.one
     url: https://sagelga.com
     image_url: https://github.com/sagelga.png
+
+ChatGPT:
+    name: ChatGPT
+    title: Generative AI chatbot
+    url: https://chat.openai.com
+    image_url: https://github.com/chatgpt.png

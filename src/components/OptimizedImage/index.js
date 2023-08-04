@@ -16,6 +16,15 @@ export default function OptimizedImage({ src, alt }) {
         },
     });
 
+    // Check if the src was properly provided, else, use the default
+    if (
+        typeof src !== 'string' ||
+        src.startsWith('http://') ||
+        src.startsWith('https://')
+    ) {
+        src = "placeholder-image-169-1080_mvmbrm"
+    }
+
     // Retrieve the image with selected quality and format
     let myImage = cld.image(`blog/${src}`).quality('auto').format('auto');
 

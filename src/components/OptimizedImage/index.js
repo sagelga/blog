@@ -1,10 +1,13 @@
 import React from 'react';
-import { AdvancedImage } from '@cloudinary/react';
+import {
+    AdvancedImage,
+    lazyload,
+    responsive,
+    placeholder,
+} from '@cloudinary/react';
 import { Cloudinary } from '@cloudinary/url-gen';
 import { scale } from '@cloudinary/url-gen/actions/resize';
-import classes from './OptimizedImage.module.css'
-
-const validImgWidthSize = [300, 500, 800, 1200];
+import classes from './OptimizedImage.module.css';
 
 export default function OptimizedImage({ src, alt }) {
     const cld = new Cloudinary({
@@ -13,23 +16,30 @@ export default function OptimizedImage({ src, alt }) {
         },
     });
 
-    let imageWidth = window.innerWidth * (7 / 12);
+    // Retrieve the image with selected quality and format
+    let myImage = cld.image(`blog/${src}`).quality('auto').format('auto');
 
-    imageWidth = validImgWidthSize.reduce((acc, curr) => {
-        return curr >= imageWidth && curr <= acc ? curr : acc;
-    }, 1200);
-
-    // console.log(imageWidth);
-
-    const myImage = cld.image(`blog/${src}`)
-        .quality('auto')
-        .format('auto')
-        .resize(scale().width(imageWidth));
+    // Apply for image transformation
+    myImage.resize(
+        scale()
+        //         .width(imageWidth)
+        //         .height(imageHeight)
+        //         .gravity(autoGravity())
+    );
 
     return (
-        <figure className={classes}>
-            <AdvancedImage cldImg={myImage} />
-            {alt && <figcaption>{alt}</figcaption>}
-        </figure>
+        <div>
+            <AdvancedImage
+                cldImg={myImage}
+                plugins={[
+                    lazyload({ rootMargin: '10px', threshold: 0.25 }),
+                    responsive({ steps: 200 }),
+                    placeholder({ mode: 'blur' }),
+                ]}
+            />
+            {alt && (
+                <figcaption className={classes.imageCaption}>{alt}</figcaption>
+            )}
+        </div>
     );
 }

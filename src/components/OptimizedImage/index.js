@@ -29,7 +29,7 @@ export default function OptimizedImage({ src, alt }) {
     return (
         <figure className={classes}>
             <AdvancedImage cldImg={myImage} />
-            <figcaption>{alt}</figcaption>
+            {alt && <figcaption>{alt}</figcaption>}
         </figure>
     );
 }

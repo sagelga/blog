@@ -1,11 +1,9 @@
-<<<<<<< Updated upstream
-=======
 .container {
     margin-bottom: 20px;
 }
 
->>>>>>> Stashed changes
 .imageCaption {
-    text-align: center;
+    text-align: left;
     color: #616060;
+    font-size: 0.8em;
 }

@@ -28,7 +28,11 @@ export default function OptimizedImage({ src, alt }) {
     );
 
     return (
+<<<<<<< Updated upstream
         <div>
+=======
+        <div className={classes.container}>
+>>>>>>> Stashed changes
             <AdvancedImage
                 cldImg={myImage}
                 plugins={[

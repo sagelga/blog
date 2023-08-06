@@ -26,20 +26,22 @@ export default function OptimizedImage({ src, alt }) {
     }
 
     // Retrieve the image with selected quality and format
-    let myImage = cld.image(`blog/${src}`).quality('auto').format('auto');
+    let image = cld.image(`blog/${src}`)
+        .quality('auto')
+        .format('auto');
 
     // Apply for image transformation
-    myImage.resize(
-        scale()
-        //         .width(imageWidth)
-        //         .height(imageHeight)
-        //         .gravity(autoGravity())
-    );
+    // image.resize(
+    //     scale()
+    //         .width(imageWidth)
+    //         .height(imageHeight)
+    //         .gravity(autoGravity())
+    // );
 
     return (
         <div className={classes.container}>
             <AdvancedImage
-                cldImg={myImage}
+                cldImg={image}
                 plugins={[
                     lazyload({ rootMargin: '10px', threshold: 0.25 }),
                     responsive({ steps: 200 }),

@@ -1,14 +1,14 @@
 .authorCol {
-  max-width: inherit !important;
-  flex-grow: 1 !important;
+    max-width: inherit !important;
+    flex-grow: 1 !important;
 }
 
 .imageOnlyAuthorRow {
-  display: flex;
-  flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .imageOnlyAuthorCol {
-  margin-left: 0.3rem;
-  margin-right: 0.3rem;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 }

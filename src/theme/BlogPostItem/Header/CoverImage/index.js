@@ -9,6 +9,6 @@ const BlogPostItemHeaderCoverImage = () => {
 
     return <OptimizedImage src={image} />;
     // }
-}
+};
 
-export default BlogPostItemHeaderCoverImage
+export default BlogPostItemHeaderCoverImage;

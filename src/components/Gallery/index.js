@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Gallery = ({ children }) => {
     const galleryStyle = {
@@ -8,11 +8,7 @@ const Gallery = ({ children }) => {
         marginBottom: '20px',
     };
 
-    return (
-        <div style={galleryStyle}>
-            {children}
-        </div>
-    )
-}
+    return <div style={galleryStyle}>{children}</div>;
+};
 
-export default Gallery
+export default Gallery;

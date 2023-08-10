@@ -16,19 +16,17 @@ export default function OptimizedImage({ src, alt }) {
         },
     });
 
-    // Check if the src was properly provided, else, use the default
+    // If the src were not provided, use the placeholder image
     if (
         typeof src !== 'string' ||
         src.startsWith('http://') ||
         src.startsWith('https://')
     ) {
-        src = "placeholder-image-169-1080_mvmbrm"
+        src = 'placeholder-image-169-1080_mvmbrm';
     }
 
     // Retrieve the image with selected quality and format
-    let image = cld.image(`blog/${src}`)
-        .quality('auto')
-        .format('auto');
+    let image = cld.image(`blog/${src}`).quality('auto').format('auto');
 
     // Apply for image transformation
     // image.resize(
@@ -39,11 +37,19 @@ export default function OptimizedImage({ src, alt }) {
     // );
 
     return (
-        <div className={classes.container}>
+        <div
+            className={classes.container}
+            style={{
+                objectFit: 'cover',
+                position: 'relative',
+                overflow: 'hidden',
+                borderRadius: '10px',
+            }}
+        >
             <AdvancedImage
                 cldImg={image}
                 plugins={[
-                    lazyload({ rootMargin: '10px', threshold: 0.25 }),
+                    lazyload({ rootMargin: '10px', threshold: 0.1 }),
                     responsive({ steps: 200 }),
                     placeholder({ mode: 'blur' }),
                 ]}

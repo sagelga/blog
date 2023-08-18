@@ -1,0 +1,9 @@
+{
+    "grammarly.selectors": [
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "blog/2023-07-26-why-move-docusaurus/2023-07-26-why-move-docusaurus.md"
+        }
+    ]
+}

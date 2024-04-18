@@ -2,7 +2,9 @@
 
 # Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
+
+> Upgraded Docusaurus to version 3.x since 18 April 2024
 
 ### Installation
 
@@ -44,5 +46,5 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ### Reference
 
--   https://medium.com/@rupertcarr/creating-and-deploying-a-personal-blog-portfolio-using-docusaurus-4a33f1f4e476
--   https://docusaurus.io/docs/blog
+- https://medium.com/@rupertcarr/creating-and-deploying-a-personal-blog-portfolio-using-docusaurus-4a33f1f4e476
+- https://docusaurus.io/docs/blog

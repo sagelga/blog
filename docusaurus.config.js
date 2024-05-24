@@ -113,19 +113,19 @@ const config = {
             items: [
               {
                 label: "ByteSide.one",
-                href: "https://blog.sagelga.com/tags/byte-side-one",
+                href: "/tags/byte-side-one",
               },
               {
                 label: "Generative AI",
-                href: "https://blog.sagelga.com/tags/generative-ai",
+                href: "/tags/generative-ai",
               },
               {
                 label: "Travel",
-                href: "https://blog.sagelga.com/tags/travel",
+                href: "/tags/travel",
               },
               {
                 label: "Programming",
-                href: "https://blog.sagelga.com/tags/programming",
+                href: "/tags/programming",
               },
             ],
           },
@@ -134,7 +134,7 @@ const config = {
             items: [
               {
                 label: "Home",
-                href: "https://www.sagelga.com",
+                href: "/",
               },
             ],
           },
@@ -143,7 +143,7 @@ const config = {
             items: [
               {
                 label: "Home",
-                href: "https://www.sagelga.com",
+                href: "/",
               },
             ],
           },
@@ -151,12 +151,8 @@ const config = {
             title: "About sagelga",
             items: [
               {
-                label: "Home",
-                href: "https://www.sagelga.com",
-              },
-              {
                 label: "sagelga's blog",
-                href: "https://www.sagelga.com",
+                href: "https://blog.sagelga.com",
               },
               {
                 label: "Learn with sagelga",
@@ -167,8 +163,12 @@ const config = {
                 to: "https://byteside.one/th/",
               },
               {
-                label: "Follow me on GitHub",
+                label: "Follow sagelga on GitHub",
                 href: "https://github.com/sagelga",
+              },
+              {
+                label: "About sagelga",
+                href: "https://www.sagelga.com",
               },
             ],
           },

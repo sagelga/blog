@@ -92,7 +92,7 @@ const config = {
             to: "/tags/generative-ai",
             position: "left",
           },
-          // { label: 'Travel', to: '/tags/travel', posistion: 'left' },
+          { label: "Travel", to: "/tags/travel", posistion: "left" },
           {
             label: "Programming",
             to: "/tags/programming",
@@ -107,39 +107,73 @@ const config = {
       },
       footer: {
         style: "dark",
-        // links: [
-        //     {
-        //         title: 'Community',
-        //         items: [
-        //             {
-        //                 label: 'Stack Overflow',
-        //                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //             },
-        //             {
-        //                 label: 'Discord',
-        //                 href: 'https://discordapp.com/invite/docusaurus',
-        //             },
-        //             {
-        //                 label: 'Twitter',
-        //                 href: 'https://twitter.com/docusaurus',
-        //             },
-        //         ],
-        //     },
-        //     {
-        //         title: 'More',
-        //         items: [
-        //             {
-        //                 label: 'Blog',
-        //                 to: '/',
-        //             },
-        //             {
-        //                 label: 'GitHub',
-        //                 href: 'https://github.com/facebook/docusaurus',
-        //             },
-        //         ],
-        //     },
-        // ],
-        copyright: `Copyright © ${new Date().getFullYear()} by <a href="https://sagelga.com">sagelga</a>. Built with Docusaurus.`,
+        links: [
+          {
+            title: "Topics",
+            items: [
+              {
+                label: "ByteSide.one",
+                href: "https://blog.sagelga.com/tags/byte-side-one",
+              },
+              {
+                label: "Generative AI",
+                href: "https://blog.sagelga.com/tags/generative-ai",
+              },
+              {
+                label: "Travel",
+                href: "https://blog.sagelga.com/tags/travel",
+              },
+              {
+                label: "Programming",
+                href: "https://blog.sagelga.com/tags/programming",
+              },
+            ],
+          },
+          {
+            title: " ",
+            items: [
+              {
+                label: "Home",
+                href: "https://www.sagelga.com",
+              },
+            ],
+          },
+          {
+            title: " ",
+            items: [
+              {
+                label: "Home",
+                href: "https://www.sagelga.com",
+              },
+            ],
+          },
+          {
+            title: "About sagelga",
+            items: [
+              {
+                label: "Home",
+                href: "https://www.sagelga.com",
+              },
+              {
+                label: "sagelga's blog",
+                href: "https://www.sagelga.com",
+              },
+              {
+                label: "Learn with sagelga",
+                to: "https://learn.sagelga.com/",
+              },
+              {
+                label: "ByteSide.one",
+                to: "https://byteside.one/th/",
+              },
+              {
+                label: "Follow me on GitHub",
+                href: "https://github.com/sagelga",
+              },
+            ],
+          },
+        ],
+        copyright: `Copyright © 2019-${new Date().getFullYear()} · Made with ❤️ by <a href="https://sagelga.com">sagelga</a>`,
       },
       prism: {
         theme: lightCodeTheme,
